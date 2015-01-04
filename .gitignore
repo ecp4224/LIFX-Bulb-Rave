@@ -1,6 +1,7 @@
 *.class
 
 *.iml
+main/c/wasapi/*
 .idea/*
 
 # Mobile Tools for Java (J2ME)
