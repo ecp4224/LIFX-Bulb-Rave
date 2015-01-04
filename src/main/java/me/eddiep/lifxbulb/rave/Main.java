@@ -81,6 +81,7 @@ public class Main {
             log("Starting rave!");
             Thread thread = new Thread(RAVE_RUNNABLE);
             thread.start();
+            System.out.println("LIFX Rave is ready! Play some music and get ready to rave!");
             System.out.println("!! Type \"stop\" to stop the rave !!");
 
 

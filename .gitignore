@@ -3,6 +3,8 @@
 *.iml
 src/main/c/wasapi/*
 .idea/*
+out/*
+src/main/java/META-INF/*
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
