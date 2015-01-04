@@ -1,11 +1,8 @@
 #include <stdio.h>
-#include <iostream>
 #include <bass.h>
 #include <basswasapi.h>
 #include <jni.h>
 #include <me_eddiep_lifxbulb_rave_system_WASAPI.h>
-
-using namespace std;
 
 // WASAPI function
 DWORD CALLBACK WasapiProc(void *buffer, DWORD length, void *user)
