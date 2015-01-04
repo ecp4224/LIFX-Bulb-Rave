@@ -1,0 +1,3 @@
+[submodule "src/lib/lifx-sdk-java"]
+	path = src/lib/lifx-sdk-java
+	url = git@github.com:besherman/lifx-sdk-java.git

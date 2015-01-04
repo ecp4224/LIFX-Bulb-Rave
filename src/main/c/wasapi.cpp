@@ -1,8 +1,11 @@
 #include <stdio.h>
+#include <iostream>
 #include <bass.h>
 #include <basswasapi.h>
 #include <jni.h>
 #include <me_eddiep_lifxbulb_rave_system_WASAPI.h>
+
+using namespace std;
 
 // WASAPI function
 DWORD CALLBACK WasapiProc(void *buffer, DWORD length, void *user)
@@ -40,7 +43,8 @@ jfloatArray JNICALL Java_me_eddiep_lifxbulb_rave_system_WASAPI_getSoundData(JNIE
 	jfloatArray result;
 	result = env->NewFloatArray(1024);
 	env->SetFloatArrayRegion(result, 0, 1024, fft);
-	free(fft);
+
+	//free(fft); this causes the JVM to crash...
 
 	return result;
 }
