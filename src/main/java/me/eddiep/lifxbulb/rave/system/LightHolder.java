@@ -27,6 +27,6 @@ public class LightHolder {
         int newR = Math.min((int)(r * num), 255), newG = Math.min((int)(g * num), 255), newB = Math.min((int)(b * num), 255);
 
         Color color = new Color(newR, newG, newB);
-        light.setColor(new LFXHSBKColor(color, kelvin));
+        light.setColor(new LFXHSBKColor(color, kelvin), 1);
     }
 }
